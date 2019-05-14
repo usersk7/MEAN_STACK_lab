@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>a. write a javascript programm to accept input 
+        from user in "userInput" and display it on console as well as 
+        <h1> h1 tag userInput </h1>
+
+<input id="text" type="text">
+<button onclick="myFunction()">show</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var a = document.getElementById("text").value;
+  console.log(a);
+  document.getElementById("demo").innerHTML = a;
+}
+</script>
+
+</body>
+</html>

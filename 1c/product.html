@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+</head>
+<body>
+    <script src="./product.js">
+</script>
+
+<script>
+    var product = getproduct();
+    document.write("<table>");
+    for(var i=0;i<product.length;i++)
+    {
+        var id = product[i].pid;
+        var name = product[i].name;
+        var price = product[i].price;
+
+        document.write("<tr>"+
+            "<td>"+"PID: "+id+"</td>"+
+            "<td>"+"Name: "+name+"</td>"+
+            "<td>"+"price: "+price+"</td>"+
+            "<tr>"+"<br>");
+    }
+    document.write("</table>");
+</script>
+
+
+    
+<script src="./product.js"></script>
+</body>
+</html>

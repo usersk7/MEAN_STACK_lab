@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+    <p id="demo">This is text</p>
+    <script>
+        function chngcolor(obj){
+          //  document.body.style.color=obj.value;
+          //  document.body.style.color=obj.value;
+        document.getElementById("demo").style.color=obj.value;
+        
+        }
+    </script>
+
+<input type="radio" value="red" onclick=chngcolor(this)> RED 
+<input type="radio" value="blue" onclick=chngcolor(this)> Blue
+<input type="radio" value="yellow" onclick=chngcolor(this)> yellow
+
+</body>
+</html>

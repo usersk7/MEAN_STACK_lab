@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation</title>
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="username">
+    <input type="password" id="password" placeholder="password">
+    <input type="button" value="Login" id="button">
+
+    <script src="../jquery-3.4.0.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("#button").click(() => {
+                var username = $("#username").val();
+                var password = $("#password").val();
+
+                if (username.length == 0) {
+                    alert("username cannot be empty");
+                    return;
+                }
+                if (username.length < 4 || username.length > 15) {
+                    alert("username length is not valid");
+                    return;
+                }
+                if(password.length<8){
+                    alert("password invalid");
+                    return;
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>
