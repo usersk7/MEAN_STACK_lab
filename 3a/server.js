@@ -20,7 +20,7 @@ app.get('/error.html',function(req,res){
 });
 
 app.post('/val',(req,res)=>{
-    console.log(req.body);
+    console.log("this console"+console.log(req.body));
     var usrename = req.body.username;
     var password = req.body.password;
     if(usrename == "shubham" && password == "shubham")

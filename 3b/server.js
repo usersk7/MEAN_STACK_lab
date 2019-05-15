@@ -74,9 +74,6 @@ router.get('/book/:bookId',function(req,res) {
     });
 });
 
-
-
-
 // Setup server port
 var port = process.env.PORT || 7878;
 //express server 
